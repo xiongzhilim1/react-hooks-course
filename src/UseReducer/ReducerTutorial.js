@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
 
 // similar to the usestate hook which is purposed for updating of variables / changing states of variables and re-rendering it
-// but usereducer hook consolidates them
+// but usereducer hook consolidates them, useful when you have a bunch of states being altered by a single action!
 
 // defining the reducer function
 const reducer = (state, action) => {
