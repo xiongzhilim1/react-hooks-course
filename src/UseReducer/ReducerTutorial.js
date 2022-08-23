@@ -1,5 +1,9 @@
 import React, { useReducer } from "react";
 
+// similar to the usestate hook which is purposed for updating of variables / changing states of variables and re-rendering it
+// but usereducer hook consolidates them
+
+// defining the reducer function
 const reducer = (state, action) => {
   switch (action.type) {
     case "INCREMENT":
@@ -11,6 +15,7 @@ const reducer = (state, action) => {
   }
 };
 
+// where state is an object with the 2 fields, dispatch is a function, reducer is a function, {[the 2 fields and initial values]}
 const ReducerTutorial = () => {
   const [state, dispatch] = useReducer(reducer, { count: 0, showText: true });
 
