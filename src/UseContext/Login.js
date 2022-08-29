@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import { AppContext } from "./ContextTutorial";
 
+// importing the context object 
 function Login() {
+  // initialise setter from usecontext's created appcontext
   const { setUsername } = useContext(AppContext);
 
   return (
